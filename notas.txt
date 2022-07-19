@@ -1,0 +1,36 @@
+Premissa: é segunda-feira e o despertador não tocou!
+A personagem bebe de penalti o café (equivalente aos pontos de hp e/ou stam que terá disponíveis), sai de casa a correr, pega na bicicleta e começa a pedalar furiosamente para o trabalho
+
+Conteúdos a incluir:
+
+--------------
+	- executar música (queen-bicyle race 8-bit)
+
+	- inserir ascii art no início, ou enquanto buffer entre eventos?
+
+        __o
+      _ \<_
+(((  (_)/(_)
+
+	
+	- valor HP determina simultaneamente o hp e a stamina da personagem, ou programar valores HP e Sta distintos?
+-----------
+
+	- rolls periódicos de 1/20 probabilidade de haver um furo. Decidir entre continuar o caminho
+a correr (perda gradual de hp) ou apanhar o autocarro (probabilidade de estar atrasado - penalização hp)
+
+	- evento 1: sinal amarelo: acelerar (possibilidade de ter acidente) ou parar (perda ligeira de hp)
+
+	- evento 2: obras na estrada: saltar buraco (possibilidade de queda) ou ir à volta (perda ligeira de hp)
+
+		- opcional: evento anterior em que a personagem pode escolher parar e dar uma moeda a um musico de rua 
+(perda muito ligeira de hp) ou ignorar. Em caso de parar e dar, o músico agradece e avisa que há obras e
+ sugere um caminho alternativo, evitando o evento 2
+
+	- rolls periódicos: pombos no caminho, cocó de pombo;
+			 carro parado na ciclovia;
+			 taxi, gancho de direita num cruzamento;
+ 			velhinho a atravessar a estrada, etc...
+
+
+
