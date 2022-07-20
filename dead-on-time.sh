@@ -39,71 +39,54 @@ sleep 2
 echo "..."
 sleep 1
 
-#c.1#
+echo "Starting game..."
+sleep 1
+echo "..."
+sleep 1
+echo "It's monday morning and you are late for work!!!"
+sleep 3
+echo "Still half asleep, you jump up from bed, hastingly put on some clothes and rush to the door"
+sleep 5
+echo "Just before you leave, you remember there's still some coffee from the previous evening"
+sleep 6
+echo "With no time to lose, you drink the remaining cold coffee from the pot in one fell swoop."
+sleep 3
+echo "Disgusting! But you need the energy for the road ahead"
+sleep  4
+echo  "(HP +60!)"
+sleep 3
+echo "Outside, you hop on your bicycle and start pedaling away"
+sleep 3
+echo "Will you get to work on time?"
+sleep 3
+echo "Will you even make it there?"
+sleep 3
+echo "Everything's up to you..."
+sleep 3
+echo "loading..."
+echo "        __o"
+echo "      _ \<_"
+echo "(((  (_)/(_)"
+sleep 3
+echo "loading..."
+echo "             __o"
+echo "           _ \<_"
+echo "     (((  (_)/(_)"
+sleep 2
+echo "loading..."
+echo "                  __o"
+echo "                _ \<_"
+echo "          (((  (_)/(_)"
+sleep 2
+echo "..."
+sleep 1
+HP=$(( 60 ))
+carry=$HP
 
+export carry
+./t1a.sh
 
-#hp-10
-#jump or stop
-#jump(-10hp) stop (-3hp)
+echo $(bash t1a.sh)
 
-
-echo "You spot a HUGE pot hole on the road ahead. Do you jump over ir, or cautiously circle around?"
-echo "(jump) or (circle)"
-
-read p1
-
-pothole=$(( $RANDOM % 100 ))
-
-if [[ $p1 == "jump" ]]; then
-	sleep 1
-	echo "jumping......."
-	sleep 2
-else
-	sleep 2
-	echo "too afraid to jump? Booooriiiing..."
-	sleep 1
-	exit 1
-fi
-
-if [[ $pothole -le 33 ]]; then
-	sleep 1
-	echo "pothole rolls" $pothole
-	sleep 1
-	echo "you jump successfully! No damage received"
-	elif [[ $pothole -le 66 ]]; then
-		sleep 1
-		echo "pothole rolls" $pothole
-		sleep 1
-		echo "you manage to land the jump but damage your bike. -3hp"
-	else
-		sleep 1
-		echo "pothole rolls" $pothole
-		sleep 1
-		echo "you fall on your head and die. GAME OVER"
-
-fi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+exit 1
 
