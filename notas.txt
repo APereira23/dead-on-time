@@ -6,12 +6,6 @@ Conteúdos a incluir:
 --------------
 	- executar música (queen-bicyle race 8-bit)
 
-	- inserir ascii art no início, ou enquanto buffer entre eventos?
-
-        __o
-      _ \<_
-(((  (_)/(_)
-
 	
 	- valor HP determina simultaneamente o hp e a stamina da personagem, ou programar valores HP e Sta distintos?
 -----------

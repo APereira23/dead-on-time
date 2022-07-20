@@ -26,10 +26,15 @@ sleep 1
 
 if [[ $hp_ev1_pos -le 0 ]];then
         echo "YOU DIED. GAME OVER"
-	exit 1
+
 else
 echo "Current HP - $hp_ev1_pos"
 fi
+
+dmg=$(( $RANDOM % 11 + 10 ))
+echo "$dmg"
+
+read input
 
 carry=$hp_ev1_pos
 export carry

@@ -19,7 +19,7 @@ else
 fi
 
 sleep 2
-
+echo $(clear)
 #intro#
 echo "loading..."
 echo "        __o"
@@ -43,37 +43,33 @@ echo "Starting game..."
 sleep 1
 echo "..."
 sleep 1
+echo $(clear)
 echo "It's monday morning and you are late for work!!!"
 sleep 3
-echo "Still half asleep, you jump up from bed, hastingly put on some clothes and rush to the door"
+echo "Still half asleep, you jump up from bed, hastingly put on some clothes and rush to the door."
 sleep 5
-echo "Just before you leave, you remember there's still some coffee from the previous evening"
-sleep 6
-echo "With no time to lose, you drink the remaining cold coffee from the pot in one fell swoop."
-sleep 3
-echo "Disgusting! But you need the energy for the road ahead"
-sleep  4
-echo  "(HP +60!)"
-sleep 3
-echo "Outside, you hop on your bicycle and start pedaling away"
-sleep 3
+echo "Outside, you hop on your trusty old bicycle and start pedaling away as fast as you can."
+sleep 5
+echo $(clear)
+sleep 1
 echo "Will you get to work on time?"
 sleep 3
 echo "Will you even make it there?"
-sleep 3
+sleep 5
+echo $(clear)
 echo "Everything's up to you..."
-sleep 3
-echo "loading..."
+sleep 5
+echo $(clear)
 echo "        __o"
 echo "      _ \<_"
 echo "(((  (_)/(_)"
 sleep 3
-echo "loading..."
+echo "..."
 echo "             __o"
 echo "           _ \<_"
 echo "     (((  (_)/(_)"
 sleep 2
-echo "loading..."
+echo "..."
 echo "                  __o"
 echo "                _ \<_"
 echo "          (((  (_)/(_)"
