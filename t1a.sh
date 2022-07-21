@@ -58,7 +58,7 @@ if [[ $input == "f" ]]; then
 		sleep 4
 		echo "They wave at you and go about their business."
 		sleep 2
-		timedmg=$(( 8 ))
+		timedmg=$(( 12 ))
 		echo "-$timedmg time"
 		hp_t1_post=$hp_t1_pre
 		time_t1_post=$(( $time_t1_pre - $timedmg ))
@@ -73,7 +73,7 @@ time_t1_post=$(( $time_t1_pre - 15 ))
 
 fi
 echo "..."
-echo "Press any key to continue"
+echo "Press [enter] to continue"
 read key
 
 

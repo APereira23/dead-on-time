@@ -133,7 +133,7 @@ if [[ $hp_t2_post -le 0 ]]; then
 
 else
 echo "..."
-echo "Press any key to continue"
+echo "Press [enter] to continue"
 fi
 
 read key
