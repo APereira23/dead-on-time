@@ -53,9 +53,9 @@ sleep 5
 echo $(clear)
 sleep 1
 echo "Will you get to work on time?"
-sleep 3
+sleep 2
 echo "Will you even make it there?"
-sleep 5
+sleep 3
 echo $(clear)
 echo "Everything's up to you..."
 sleep 5
