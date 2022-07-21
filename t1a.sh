@@ -48,8 +48,6 @@ if [[ $input == "f" ]]; then
 			echo "Miss!"
 			hp_t1_post=$hp_t1_pre
 			time_t1_post=$time_t1_pre
-			echo "current hp: $hp_t1_post"
-                	echo "current time: $time_t1_post"
 
 	fi
 
@@ -64,8 +62,6 @@ if [[ $input == "f" ]]; then
 		echo "-$timedmg time"
 		hp_t1_post=$hp_t1_pre
 		time_t1_post=$(( $time_t1_pre - $timedmg ))
-		echo "current hp: $hp_t1_post"
-                echo "current time: $time_t1_post"
 
 else
 echo "Wrong key! You waver under the burden of choice, and fall off your bike."
@@ -74,8 +70,6 @@ echo "-30 hp"
 echo "-15 time"
 hp_t1_post=$(( $hp_t1_pre - 30 ))
 time_t1_post=$(( $time_t1_pre - 15 ))
-echo "current hp: $hp_t1_post"
-echo "current time: $time_t1_post"
 
 fi
 echo "..."
