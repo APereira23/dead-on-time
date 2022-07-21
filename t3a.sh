@@ -97,6 +97,8 @@ time_t3_post=$(( $time_t3_pre - 15 ))
 
 fi
 sleep 2
+
+#failconditions
 if [[ $hp_t3_post -le 0 ]]; then
         echo "You fainted."
         sleep 2
