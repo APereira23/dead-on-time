@@ -113,15 +113,16 @@ if [[ $hp_t3_post -le 0 ]]; then
 
 else
 echo "..."
-echo "Press any key to continue"
-read key
+echo "Press [enter] to continue"
+fi
 
+read key
 
 carryhp3=$hp_t3_post
 carrytime3=$time_t3_post
 
 export carryhp3 carrytime3
-./t2a.sh
+./t4a.sh
 
 sleep 1
 
