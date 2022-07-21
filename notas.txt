@@ -5,7 +5,8 @@ Conteúdos a incluir:
 
 --------------
 	- executar música (queen-bicyle race 8-bit)
-
+	
+	créditos início / fim
 	
 	- valor HP determina simultaneamente o hp e a stamina da personagem, ou programar valores HP e Sta distintos?
 -----------
@@ -26,6 +27,8 @@ a correr (perda gradual de hp) ou apanhar o autocarro (probabilidade de estar at
 			 carro parado na ciclovia;
 			 taxi, gancho de direita num cruzamento;
  			velhinho a atravessar a estrada, etc...
+ 			
+ 	
 
 
 

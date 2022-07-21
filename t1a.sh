@@ -39,13 +39,13 @@ if [[ $input == "f" ]]; then
 		hp_t1_post=$(( $hp_t1_pre - $hpdmg ))
 		echo "-$timedmg time"
 		time_t1_post=$(( $time_t1_pre - $timedmg ))
-		echo "current hp: $hp_t1_post"
-		echo "current time: $time_t1_post"
 
 		elif [[ $kid == 0 ]]; then
 			echo "..."
 			sleep 2
 			echo "Miss!"
+			sleep 1
+			echo "It must be your lucky day."
 			hp_t1_post=$hp_t1_pre
 			time_t1_post=$time_t1_pre
 
@@ -77,13 +77,10 @@ echo "Press any key to continue"
 read key
 
 
-
 carryhp=$hp_t1_post
-export carryhp
-./t2a.sh
-
 carrytime=$time_t1_post
-export carrytime
+
+export carryhp carrytime
 ./t2a.sh
 
 sleep 1
