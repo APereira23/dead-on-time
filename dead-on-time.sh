@@ -2,7 +2,6 @@
 
 #start screen
 
-echo $(timidity ./test-script/bicycle-race)&
 echo "Hello! You are about to play DEAD ON TIME! Type [start] whenever you're ready."
 
 read  start
@@ -44,7 +43,11 @@ echo "Starting game..."
 sleep 1
 echo "..."
 sleep 1
+
+#MUSIC
+echo $(timidity ./sound/SnA.mid --loop)&
 echo $(clear)
+#MUSIC
 echo "It's monday morning and you are late for work!!!"
 sleep 3
 echo "Still half asleep, you jump up from bed, hastingly put on some clothes and rush to the door."
