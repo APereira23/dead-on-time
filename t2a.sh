@@ -30,25 +30,23 @@ echo "Time: $time_t2_pre"
 sleep 3
 echo "..."
 sleep 1
-echo "You scare a flock of pigeons off the cycling lane. They do not take kindly to threats and assume an attacking formation, carpet bombing you with poop."
+echo "You scare a flock of pigeons off the cycling lane."
+sleep 2
+echo "They do not take kindly to threats and assume an attacking formation, carpet bombing you with poop!"
 sleep 6
 echo "DODGE THE POOP"
 sleep 3
-echo "(Type the correct combination of numbers, in the right order, to successfully perform the designated action.)"
+echo "(A series of numbers will flash on your screen. Type the correct combination of numbers, in the right order, to successfully perform the designated action.)"
 sleep 6
 echo "Ready?"
-sleep 2
-echo "3"
-sleep 1
-echo "2"
-sleep 1
-echo "1"
-sleep 1
-echo "Memorize the pattern!"
-sleep 1
-
+sleep 3
 echo $(clear)
 sleep 1
+echo "Memorize the pattern!"
+sleep 2
+
+echo $(clear)
+sleep 2
 n1=$(( $RANDOM % 10 ))
 echo "$n1"
 sleep 1
