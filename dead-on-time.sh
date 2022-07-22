@@ -2,6 +2,7 @@
 
 #start screen
 
+echo $(timidity ./test-script/bicycle-race)&
 echo "Hello! You are about to play DEAD ON TIME! Type [start] whenever you're ready."
 
 read  start

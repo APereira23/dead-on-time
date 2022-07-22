@@ -34,7 +34,7 @@ echo "You scare a flock of pigeons off the cycling lane. They do not take kindly
 sleep 6
 echo "DODGE THE POOP"
 sleep 3
-echo "Type the correct combination of numbers, in the order they will be shown, to successfully perform the designated action."
+echo "(Type the correct combination of numbers, in the right order, to successfully perform the designated action.)"
 sleep 6
 echo "Ready?"
 sleep 2

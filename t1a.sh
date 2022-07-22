@@ -10,7 +10,7 @@ time_t1_pre=$(( 100 ))
 sleep 3
 echo "..."
 sleep 1
-echo "You spot a couple of kids playing football down the street"
+echo "You spot a couple of kids playing football down the street."
 sleep 3
 echo "You know those little rapscallions, and they are never up to any good."
 sleep 3
@@ -20,11 +20,13 @@ read input
 
 if [[ $input == "f" ]]; then
 	sleep 1
-	echo "You speed up and ring the bell to keep those pesky kids away while you fly past them."
+	echo "You speed up, ringing the bell in order to keep those pesky kids away while you fly past them."
 	sleep 3
-	echo "One of the brats feels disrespected by your action and starts looking at you as if you were a moving target."
+	echo "One of the brats feels disrespected by your action."
+	sleep 2
+	echo "He starts looking at you as if you were a moving target..."
 	sleep 6
-	echo "He picks the ball and shoots it like he's Roberto Carlos in '97..."
+	echo "He picks the ball and shoots it like he's Roberto Carlos in '97."
 	sleep 4
 	echo "..."
 	sleep 2
