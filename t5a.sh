@@ -33,9 +33,11 @@ sleep 1
 
 #event
 
-echo "There is a coffee shop on the side of the road.
+echo "There is a coffee shop on the side of the road."
 sleep 2
-echo "Right now you'd give anything for a cup of coffee, but maybe there's no time..."
+echo "Right now you'd give just about anything for a cup of coffee,"
+sleep 2
+echo "but maybe there's no time..."
 sleep 3
 echo "(Keep moving [m] / Have a coffee [c])"
 
