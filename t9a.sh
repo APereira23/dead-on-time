@@ -50,6 +50,8 @@ echo "		( ^.^ )"
 echo "		 > ' < "
 sleep 2
 echo $(clear)
+sleep 2
+echo "Your dark soul is filled with light, and you recover the will to carry on."
 sleep 1
 
 

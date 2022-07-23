@@ -32,7 +32,6 @@ echo "..."
 sleep 1
 
 #event
-
 echo "You approach an intersection."
 sleep 2
 echo "The light turns red right as you reach it."
