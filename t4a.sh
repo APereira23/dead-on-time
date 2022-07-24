@@ -51,7 +51,7 @@ if [[ $input == "s" ]]; then
 	echo "Still having your head attached to your shoulders also helps."
 	echo "You wait for the signal to turn green before you cross."
 	sleep 5
-	timedmg=$(( $RANDOM % 6 + 16 ))
+	timedmg=$(( $RANDOM % 6 + 20 ))
         echo "-$timedmg time"
         hp_t4_post=$hp_t4_pre
         time_t4_post=$(( $time_t4_pre - $timedmg ))
@@ -62,8 +62,9 @@ if [[ $input == "s" ]]; then
 		echo "..."
 		sleep 1
 		echo "There are cars coming your way!!!"
+		sleep 3
 		#number game HARD
-		
+		echo $(clear)
 		echo "DODGE THE INCOMING TRAFFIC"
 		sleep 3
 		echo "(Type the correct combination of numbers, in the right order, to successfully perform the designated action.)"
@@ -115,11 +116,6 @@ if [[ $input == "s" ]]; then
                 n8=$(( $RANDOM % 10 ))
                 echo "          $n8"
                 sleep 1
-
-		echo $(clear)
-                n9=$(( $RANDOM % 10 ))
-                echo "$n9"
-                sleep 1
 		echo $(clear)
 		
 		sleep 1
@@ -132,7 +128,7 @@ if [[ $input == "s" ]]; then
 		echo "..."
 		sleep 1
 
-		if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7$n8$n9" ]]; then
+		if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7$n8$" ]]; then
         		echo "Incredible!!"
         		sleep 2
         		echo "You channel your inner UberEats Driver and manage to escape certain death with a series of lightning-quick dodges."
@@ -154,7 +150,7 @@ if [[ $input == "s" ]]; then
 		sleep 2
 		echo "Also blood. Lots of blood."
 		sleep 2
-		timedmg=$(( $RANDOM % 3 + 10 ))
+		timedmg=$(( $RANDOM % 3 + 15 ))
                 hpdmg=$(( $RANDOM % 20 + 25 ))
 		echo "-$hpdmg hp"
 		echo "-$timedmg time"

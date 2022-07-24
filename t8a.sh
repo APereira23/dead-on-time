@@ -27,8 +27,8 @@ if [[ $pass == "jump" ]]; then
 
 else
 
-hp_t8_pre="50" #$carryhp7
-time_t8_pre="50" #$carrytime7
+hp_t8_pre=$carryhp7
+time_t8_pre=$carrytime7
 
 fi
 

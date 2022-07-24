@@ -55,7 +55,7 @@ if [[ $input == "b" ]]; then
 	hp_t7_post=$hp_t7_pre
 	time_t7_post=$(( $time_t7_pre - $timedmg ))
 
-	elif [[ $input == "m" ]];then
+	elif [[ $input == "m" ]]; then
 		echo "Hell yeah, Rock n' Roll!"
 		sleep 2
 		echo "You've come this far already, no point in slowing down now."
