@@ -107,8 +107,8 @@ echo "One of the pigeons lands a perfect headshot."
 sleep 2
 echo "Critical hit!"
 sleep 2
-hpdmg=$(( $RANDOM % 10 + 15 ))
-timedmg=$(( $RANDOM % 5 + 3 ))
+hpdmg=$(( $RANDOM % 9 + 17 ))
+timedmg=$(( $RANDOM % 5 + 6 ))
 echo "-$hpdmg hp"
 echo "-$timedmg time"
 hp_t2_post=$(( $hp_t2_pre - $hpdmg ))

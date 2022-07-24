@@ -124,7 +124,7 @@ read key
 carryhp9=$hp_t9_post
 carrytime9=$time_t9_post
 
-export carryhp10 carrytime10
+export carryhp9 carrytime9
 ./t10a.sh
 
 sleep 1

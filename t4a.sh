@@ -128,7 +128,7 @@ if [[ $input == "s" ]]; then
 		echo "..."
 		sleep 1
 
-		if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7$n8$" ]]; then
+		if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7$n8" ]]; then
         		echo "Incredible!!"
         		sleep 2
         		echo "You channel your inner UberEats Driver and manage to escape certain death with a series of lightning-quick dodges."
