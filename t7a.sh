@@ -21,10 +21,10 @@ sleep 1
 echo $(clear)
 
 
-hp_t7_pre="50" #$carryhp6
-time_t7_pre="50" #$carrytime6
+hp_t7_pre=$carryhp6
+time_t7_pre=$carrytime6
 
-echo "PROGRESS: Home .....................o-o.................... Work"
+echo "PROGRESS: Home .......................o-o.................. Work"
 echo "HP: $hp_t7_pre"
 echo "Time: $time_t7_pre"
 sleep 3
