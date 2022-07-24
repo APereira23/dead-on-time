@@ -36,7 +36,10 @@ echo "They do not take kindly to threats and assume an attacking formation, carp
 sleep 6
 echo "DODGE THE POOP"
 sleep 3
-echo "(A series of numbers will flash on your screen. Type the correct combination of numbers, in the right order, to successfully perform the designated action.)"
+echo $(clear)
+echo "(A series of numbers will flash on your screen."
+echo "Type the correct combination of numbers, in the right order,"
+echo "to successfully perform the designated action.)"
 sleep 6
 echo "Ready?"
 sleep 3

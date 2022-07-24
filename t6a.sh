@@ -49,7 +49,7 @@ echo "..."
 sleep 2
 
 if [[ $input == "r" ]]; then
-	echo "You pretend that you don't have any change on you, and quicky get away."
+	echo "You pretend that you don't have any change on you, and quickly get away."
 	hp_t6_post=$hp_t6_pre
 	time_t6_post=$time_t6_pre
 
