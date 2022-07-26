@@ -55,7 +55,7 @@ if [[ $input == "s" ]]; then
 	sleep 2
 	echo $(clear)
 	sleep 1
-	echo $(timidity ./sound/kitty.mid)&
+	echo $(timidity ./sound/kitty.mid --volume=200)&
 	echo " /\_/\ "
 	echo "( ^.^ )"
 	echo " > ' < "
