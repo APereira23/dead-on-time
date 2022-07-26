@@ -33,8 +33,8 @@ if [[ $input == "f" ]]; then
 	echo "..."
 	kid=$(( $RANDOM % 2 ))
 	if [[ $kid == 1 ]]; then
-		hpdmg=$(( $RANDOM % 11 + 18 ))
-		timedmg=$(( $RANDOM % 7 + 14 ))
+		hpdmg=$(( $RANDOM % 11 + 15 ))
+		timedmg=$(( $RANDOM % 6 + 10 ))
 		echo "The ball hits the front wheel with full force, causing you to fall down as the kids run away laughing."
 		sleep 3
 		echo "-$hpdmg hp"

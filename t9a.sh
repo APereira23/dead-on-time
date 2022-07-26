@@ -71,9 +71,9 @@ if [[ $input == "s" ]]; then
 	echo "Your dark soul is filled with light, and you recover the will to carry on."
 	sleep 3
 	echo "+20 hp!"
-	echo "-10 time"
+	echo "-8 time"
 	hp_t9_post=$(( $hp_t9_pre + 20 ))
-	time_t9_post=$(( $time_t9_pre - 10 ))
+	time_t9_post=$(( $time_t9_pre - 8 ))
 	
 	elif [[ $input == "m" ]]; then
 		echo "You ignore the kitten and keep moving."
