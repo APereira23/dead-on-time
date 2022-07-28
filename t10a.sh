@@ -273,19 +273,11 @@ read key
 carryhp10=$hp_t10_post
 carrytime10=$time_t10_post
 
-if [[ $input == "t" ]]; then
-	export carryhp10 carrytime10
-	./t11a.sh
-	sleep 1
-	echo $(bash t11a.sh)
-
-	exit 1
-
-else
 
 export carryhp10 carrytime10
-./t11b.sh
+./t11a.sh
 sleep 1
-echo $(bash t11b.sh)
 
-fi
+echo $(bash t11a.sh)
+
+exit 1
