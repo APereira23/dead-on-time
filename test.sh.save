@@ -12,6 +12,7 @@ echo $(clear)
 sleep 1
 echo "..."
 
+killall timidity&
 bash t12.sh
 
 exit 1
