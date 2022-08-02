@@ -137,12 +137,12 @@ sleep 2
 echo $(clear)
 sleep 1
 n1=$(( $RANDOM % 1000 ))
-echo "												$n1"
+echo "		                                  											$n1"
 sleep 1
 echo $(clear)
 sleep 1
 n2=$(( $RANDOM % 1000 )) 
-echo "	                        			                           $n2"
+echo "	                        								                           $n2"
 sleep 1
 
 echo $(clear)
@@ -438,12 +438,12 @@ sleep 1
 echo $(clear)
 sleep 1
 n5=$(( $RANDOM % 10000 ))
-echo "							$n5"
+echo "								$n5"
 sleep 1
 echo $(clear)
 sleep 1
 n6=$(( $RANDOM % 100 )) 
-echo "        							 $n6"
+echo "        									 $n6"
 sleep 1
 
 echo $(clear)
@@ -587,12 +587,12 @@ sleep 1
 
 echo $(clear)
 sleep 1
-n7=$(( $RANDOM % 10000 ))
+n7=$(( $RANDOM % 1000 ))
 echo "   $n7"
 sleep 1
 echo $(clear)
 sleep 1
-n8=$(( $RANDOM % 100 )) 
+n8=$(( $RANDOM % 1000 )) 
 echo "               $n8"
 sleep 1
 
@@ -737,12 +737,12 @@ sleep 1
 echo $(clear)
 sleep 1
 n9=$(( $RANDOM % 10000 ))
-echo "   $n9"
+echo "   																	$n9"
 sleep 1
 echo $(clear)
 sleep 1
-n10=$(( $RANDOM % 100 )) 
-echo "               $n10"
+n10=$(( $RANDOM % 1000 )) 
+echo "               											$n10"
 sleep 1
 
 echo $(clear)
@@ -886,12 +886,12 @@ sleep 1
 echo $(clear)
 sleep 1
 n11=$(( $RANDOM % 10000 ))
-echo "  											 $n11"
+echo "  											 					$n11"
 sleep 1
 echo $(clear)
 sleep 1
 n12=$(( $RANDOM % 1000 )) 
-echo "  									             $n12"
+echo "  									             				$n12"
 sleep 1
 
 echo $(clear)
@@ -1271,9 +1271,10 @@ else
 echo "..."
 sleep 2
 fi
-#----------------------------------------------------------------------------
 
 
+
+#round9-start--------------------------------------------------------------------
 
 echo $(clear)
 echo "PROGRESS: Home ........................................o-o. Work"
@@ -1312,6 +1313,159 @@ exit 1
 fi
 
 echo "TAXI DRIVER $boss"
+sleep 4
+echo ""
+echo "Ready?"
+sleep 1
+echo "Here he comes again!" 
+
+#round9-fight-------------------------------------------------------------------------------
+
+echo $(clear)
+echo "PROGRESS: Home ........................................o-o. Work"
+echo "HP: $hp_t11_8"
+echo "Time: $time_t11_8"
+echo ""
+echo "TAXI DRIVER $boss"
+echo ""
+sleep 2
+echo "He's coming from the rear!"
+sleep 1
+
+echo $(clear)
+sleep 1
+n17=$(( $RANDOM % 10000 ))
+echo "  									$n17"
+sleep 1
+echo $(clear)
+sleep 1
+n18=$(( $RANDOM % 1000 )) 
+echo "         										$n18"
+sleep 1
+
+echo $(clear)
+echo "PROGRESS: Home ........................................o-o. Work"
+echo "HP: $hp_t11_8"
+echo "Time: $time_t11_8"
+echo ""
+echo "TAXI DRIVER $boss"
+echo ""
+sleep 1
+echo "Type the code"
+read code9
+sleep 2
+echo "..."
+sleep 2
+if [[ $code9 == "$n17$n18" ]]; then
+        echo "Miss!"
+        sleep 1
+        echo "He crashed into a another car. Now is your chance!"
+        sleep 1
+        echo "Choose your attack:"
+        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
+        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        read attack9
+        sleep 2
+        if [[ $attack9 == "h" ]]; then
+                roll9=$(( $RANDOM % 4 ))
+                if [[ $roll9 == "3" ]]; then
+                        echo "CRITICAL HIT!!"
+                        bosshp9=$(( $bosshp8 - 3 ))
+                        hp_t11_9=$hp_t11_8
+                        time_t11_9=$(( $time_t11_8 - 4 ))
+                        sleep 2
+                        echo "-4 time"
+                        sleep 2
+
+                else
+                echo "Miss!"
+                sleep 2
+                echo "-4 time"
+                bosshp9=$bosshp8
+                hp_t11_9=$hp_t11_8
+                time_t11_9=$(( $time_t11_8 - 4 ))
+                fi
+        else
+        echo "Hit!"
+        sleep 2
+        bosshp9=$(( $bosshp8 - 1 ))
+        hp_t11_9=$hp_t11_8
+        time_t11_9=$(( $time_t11_8 - 4 ))
+        echo "-4 time"
+        fi
+else
+echo "You're hit!"
+bosshp9=$bosshp8
+hpdmg9=$(( $RANDOM % 8 + 8 ))
+hp_t11_9=$(( $hp_t11_8 - $hpdmg9 ))
+time_t11_9=$(( $time_t11_8 - 4 ))
+sleep 1
+echo "-$hpdmg9 hp"
+echo "-4 time"
+
+fi
+if [[ $hp_t11_9 -le 0 ]]; then
+        echo "You fainted."
+        sleep 2
+        echo "GAME OVER"
+        sleep 3
+        exit 1
+
+        elif [[ $time_t11_9 -le 0 ]]; then
+                echo "Out of time!"
+                sleep 2
+                echo "GAME OVER"
+                sleep 3
+                exit 1
+
+else
+echo "..."
+sleep 2
+fi
+
+
+
+#----------------------------------------------------------------------------
+
+
+
+echo $(clear)
+echo "PROGRESS: Home ........................................o-o. Work"
+echo "HP: $hp_t11_9"
+echo "Time: $time_t11_9"
+echo ""
+
+if [[ $bosshp9 == 5 ]]; then
+        boss="[################################################]"
+                elif [[ $bosshp9 == 4 ]]; then
+                        boss="[####################################            ]"
+                                elif [[ $bosshp9 == 3 ]]; then
+                                        boss="[############################                    ]"
+                                                elif [[ $bosshp9 == 2 ]]; then
+                                                        boss="[################                                ]"
+                                                                elif [[ $bosshp9 == 1 ]]; then 
+                                                                        boss="[#####                                           ]"
+
+else
+boss="[                                                ]"
+echo "TAXI DRIVER $boss"
+echo ""
+echo ""
+sleep 2
+echo "V I C T O R Y   A C H I E V E D"
+sleep 6
+
+carryhp11=$hp_t11_9
+carrytime11=$time_t11_9
+
+export carryhp11 carrytime11
+./t12.sh
+sleep 1
+echo $(bash t12.sh)
+exit 1
+fi
+
+echo "TAXI DRIVER $boss"
 echo ""
 sleep 3
 echo "(Hey there! If you're reading this, it means the fight is starting to drag a little."
@@ -1326,8 +1480,8 @@ echo "..."
 sleep1
 echo $(clear)
 echo "PROGRESS: Home ........................................o-o. Work"
-echo "HP: $hp_t11_8"
-echo "Time: $time_t11_8"
+echo "HP: $hp_t11_9"
+echo "Time: $time_t11_9"
 echo ""
 echo "TAXI DRIVER [                                                ]"
 echo ""
@@ -1342,8 +1496,8 @@ echo ""
 echo "(Wink wink)"
 sleep 2
 
-carryhp11=$hp_t11_8
-carrytime11=$time_t11_8
+carryhp11=$hp_t11_9
+carrytime11=$time_t11_9
 
 export carryhp11 carrytime11
 ./t12.sh
