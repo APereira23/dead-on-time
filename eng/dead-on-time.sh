@@ -2,23 +2,6 @@
 
 #start screen
 
-echo "Hello! You are about to play DEAD ON TIME! Type [start] whenever you're ready."
-
-read  start
-
-if [[ $start == "start" ]]; then
-sleep 1
-	echo "Alright! Let's begin..."
-else
-        echo "Can't even type the word 'start' properly, huh?"
-	sleep 1
-	echo " Well, I guess this game wasn't for you anyway..."
-	sleep 2
-		exit 1
-
-fi
-
-sleep 2
 echo $(clear)
 #intro#
 echo "loading..."

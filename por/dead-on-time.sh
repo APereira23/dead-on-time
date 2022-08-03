@@ -2,22 +2,6 @@
 
 #start screen
 
-echo "Bem-vindo a DEAD ON TIME! Digita 'start' e pressiona [enter] para começar."
-
-read  start
-
-if [[ $start == "start" ]]; then
-sleep 1
-	echo "Iniciando..."
-else
-        echo "Hmm, nem sequer consegues escrever a palavra 'start' como deve ser?"
-	sleep 1
-	echo "Tenta de novo!"
-	sleep 2
-		exit 1
-
-fi
-
 sleep 2
 echo $(clear)
 #intro#
