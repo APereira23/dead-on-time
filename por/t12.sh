@@ -11,32 +11,28 @@ echo $(timidity ./sound/victory-fanfare.mid)&
 echo $(clear)
 sleep 3
 echo $(clear)
-echo "CONGRATULATIONS!"
+echo "PARABÉNS!"
 echo ""
 sleep 1
 echo $(timidity ./sound/outro.mid)&
 echo $(clear)
-echo "CONGRATULATIONS!"
+echo "PARABÉNS!"
 echo ""
-echo "You made it to the end!"
+echo "Conseguiste chegar ao fim!"
 sleep 2
 echo $(clear)
-echo "CONGRATULATIONS!"
+echo "PARABÉNS!"
 echo ""
-echo "You made it to the end!"
+echo "Conseguiste chegar ao fim!"
 echo ""
 sleep 4
 echo ""
-echo "Remaining HP: $hp_t12"
-echo "Remaining Time: $time_t12"
+echo "HP restante: $hp_t12"
+echo "Tempo restante: $time_t12"
 sleep 5
-echo "Hope you've enjoyed the ride!"
+echo "Espero que tenhas gostado da viagem!"
 sleep 5
 echo $(clear)
-sleep 1
-echo "I honestly don't know if anyone will ever get to this point in the game, but, if you're reading this, then"
-echo "know that I am truly grateful that you've given up some of your time for this little project of mine."
-echo "Hope you had fun!"
 sleep 10
 
 echo $(clear)
@@ -45,17 +41,17 @@ echo "DEAD ON TIME"
 echo ""
 echo ""
 sleep 2
-echo "Programming: António Pereira"
+echo "Programação: António Pereira"
 sleep 2
 echo ""
-echo "Text/Narration: António Pereira"
+echo "Texto/narração: António Pereira"
 sleep 2
 echo ""
-echo "Music and Sound FX: António Pereira"
+echo "Música e efeitos sonoros: António Pereira"
 echo ""
 sleep 4
 echo $(clear)
-echo "Press [enter] to quit"
+echo "Pressiona [enter] para terminar"
 read quit
 
 sleep 1
