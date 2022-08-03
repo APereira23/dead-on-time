@@ -24,7 +24,7 @@ hp_t10_pre=$carryhp9
 
 time_t10_pre=$carrytime9
 
-echo "PROGRESS: Home .....................................o-o.... Work"
+echo "PROGRESSO: Casa .....................................o-o.... Trabalho"
 echo "HP: $hp_t10_pre"
 echo "Time: $time_t10_pre"
 sleep 3
@@ -33,14 +33,14 @@ sleep 1
 
 #event
 
-echo "As you approach the final stretch of the journey, you find yourself in yet another traffic jam!"
+echo "Ao entrares na última etapa do percurso, dás por ti noutro engarrafamento!"
 sleep 4
-echo "Rush hour is a nightmare..."
+echo "Hora de ponta é um pesadelo..."
 sleep 2
-echo "You're stuck in traffic and losing precious time."
-echo "You need to make a critical decision..."
+echo "Preso no trânsito, estás a perder cada vez mais tempo precioso."
+echo "Precisas de tomar uma decisão importante..."
 sleep 4
-echo "(Cut through traffic [t] / Cut through the sidewalk [s])"
+echo "(Cortar pelo meio do trânsito [t] / Cortar pelo passeio [p])"
 read input
 
 sleep 1
@@ -48,24 +48,24 @@ echo "..."
 sleep 1
 
 if [[ $input == "t" ]]; then
-	echo "Decisions were made."
+	echo "A decisão foi tomada."
 	sleep 2
-	echo "You risk it all and cut through the stationary traffic, zig-zagging around every lane on the road."
+	echo "Pões todas as fichas na mesa e desatas a pedalar, zigzageando freneticamente por entre as colunas de carros parados."
 	sleep 3
-	echo "Can you make it to the end of the street?"
+	echo "Conseguirás chegar ao fim da rua?"
 	sleep 2
 	echo "..."
 	sleep 1
 	echo $(clear)
 	sleep 1
-	echo "(You know the drill. Type the correct combination of numbers, in the right order,"
-	echo "to successfully perform the designated action.)"
+	echo "(Já sabes o que tens de fazer. Digita a combinação de números correta, na ordem certa,"
+	echo "para realizar com sucesso a ação indicada.)"
 	sleep 6
-	echo "Ready?"
+	echo "Pronto?"
 	sleep 5
 	echo $(clear)
 	sleep 1
-	echo "Memorize the pattern!"
+	echo "Memoriza os números!"
 	sleep 2
 
 	echo $(clear)
@@ -100,13 +100,13 @@ if [[ $input == "t" ]]; then
         sleep 1
 
 	echo $(clear)
-	n7=$(( $RANDOM % 10 ))
+	n7=$(( $RANDOM % 100 ))
 	echo "		$n7"
         sleep 1
 
 	echo $(clear)
         sleep 1
-        echo "Type the numbers shown in the correct order."
+        echo "Digita os números na ordem certa."
         sleep 1
         read numbers
         sleep 1
@@ -115,26 +115,26 @@ if [[ $input == "t" ]]; then
         echo "..."
         sleep 1
 	if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7" ]]; then
-                echo "Well done!"
+                echo "Muito bem!"
                 sleep 2
-                echo "You're almost there!"
+                echo "Estás quase lá!"
                 sleep 2
                 timedmg=$(( $RANDOM % 3 + 3 ))
                 echo "-$timedmg time"
                 hp_t10_post=$hp_t10_pre
                 time_t10_post=$(( $time_t10_pre - $timedmg ))
         else
-	echo "Fail!"
+	echo "Falhaste!"
 	sleep 2
-	echo "You smash into a TukTuk filled with tourists and land right in the lap of panicked german lady."
+	echo "Chocas com um Tuktuk cheio de turistas e és violentamente projetado de cabeça contra o regaço de uma senhora alemã em pânico."
 	sleep 3
 	echo "..."
 	sleep 1
-	echo "You manage to get back on your bike and get away. All the while, the german lady keeps yelling"
+	echo "Consegues pegar na bicicleta e foges dali. Durante tudo isto, a senhora não pára de gritar coisas como"
 	sleep 1
 	echo "'Du Arschloch!! Hustensaftschmuggler!!! Verpiss dich!!!!'"
 	sleep 5
-	echo "Good thing you don't know german."
+	echo "Ainda bem que não sabes falar alemão."
 	sleep 3
 	hpdmg=$(( $RANDOM % 6 + 15 ))
 	timedmg=$(( $RANDOM % 6 + 10 ))
@@ -146,24 +146,24 @@ if [[ $input == "t" ]]; then
 	
 else
 
-echo "Decisions were made."
+echo "A decisão foi tomada."
 sleep 2
-echo "With nothing left to lose, you cut to the sidewalk and speed past the angry pedestrians."
+echo "Sem nada a perder, cortas pelo passeio e aceleras por entre os peões furiosos."
 sleep 3
-echo "Can you make it to the end of the street?"
+echo "Consegues chegar ao fim da rua?"
 sleep 4
 echo "..."
 sleep 1
 echo $(clear)
 sleep 1
-echo "(You know the drill. Type the correct combination of numbers, in the right order,"
-echo "to successfully perform the designated action.)"
+echo "(Já sabes o que tens de fazer. Digita a combinação de números correta, na ordem certa,"
+echo "para realizar com sucesso a ação indicada.)"
 sleep 6
-echo "Ready?"
+echo "Pronto?"
 sleep 3
 echo $(clear)
 sleep 1
-echo "Memorize the pattern!"
+echo "Memoriza os números!"
 sleep 2
 
 echo $(clear)
@@ -198,13 +198,13 @@ echo "       				   $n6"
 sleep 1
 
 echo $(clear)
-n7=$(( $RANDOM % 10 ))
+n7=$(( $RANDOM % 100 ))
 echo "				$n7"
 sleep 1
 
 echo $(clear)
 sleep 1
-echo "Type the numbers shown in the correct order."
+echo "Digita os números na ordem correta."
 sleep 1
 read numbers
 sleep 1
@@ -214,10 +214,10 @@ echo "..."
 sleep 1
 
 	if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7" ]]; then
-	        echo "Well done!"
+	        echo "Muito bem!"
 	        sleep 2
-	        echo "You managed not to kill anyone while also not killing yourself."
-		echo "Try not to make a habit out of it, though!"
+	        echo "Conseguiste não só não te matar a ti próprio, como também não matar ninguém no passeio."
+		echo "Vamos tentar não fazer disto um hábito, ainda assim!"
 	        sleep 4
 	        timedmg=$(( $RANDOM % 3 + 3 ))
 	        echo "-$timedmg time"
@@ -225,10 +225,10 @@ sleep 1
 	        time_t10_post=$(( $time_t10_pre - $timedmg ))
 
 	else
-	echo "Fail!"
+	echo "Falhaste!"
 	sleep 2
-	echo "You try to move away from an old lady and get run over by a guy riding a scooter"
-	sleep 3
+	echo "És forçado a dar uma guinada à direita para te desviares de uma velhinha, e és apanhado por um estafeta da Uber que vinha a acelerar numa trotineta elétrica."
+	sleep 4
 	hpdmg=$(( $RANDOM % 9 + 15 ))
 	timedmg=$(( $RANDOM % 6 + 15 ))
 	echo "-$hpdmg hp"
@@ -236,9 +236,9 @@ sleep 1
 	hpdmg=$(( $hp_t10_pre - $hpdmg ))
 	timedmg=$(( $time_t10_pre - $timedmg ))
 	sleep 3
-	echo "The guy in the scooter yells at you as he goes away."
+	echo "O tipo da trotineta afasta-se enquanto te chama nomes."
 	sleep 1
-	echo "...As if he had any more right to be riding that thing there!"
+	echo "...Como se ele também pudesse andar ali naquilo!"
 	sleep 2
 	hp_t10_post=$(( $hp_t10_pre - $hpdmg ))
 	time_t10_post=$(( $time_t10_pre - $timedmg ))
@@ -248,22 +248,22 @@ fi
 #failconditions
 
 if [[ $hp_t10_post -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE"
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t10_post -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
 else
 echo "..."
-echo "Press [enter] to continue"
+echo "Pressiona [enter] para continuar"
 fi
 
 #transition

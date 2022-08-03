@@ -100,7 +100,7 @@ if [[ $input == "t" ]]; then
         sleep 1
 
 	echo $(clear)
-	n7=$(( $RANDOM % 10 ))
+	n7=$(( $RANDOM % 100 ))
 	echo "		$n7"
         sleep 1
 
@@ -198,7 +198,7 @@ echo "       				   $n6"
 sleep 1
 
 echo $(clear)
-n7=$(( $RANDOM % 10 ))
+n7=$(( $RANDOM % 100 ))
 echo "				$n7"
 sleep 1
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo $(clear)
-echo "PROGRESSO: Home ..o-o....................................... Work"
+echo "PROGRESSO: Casa ..o-o....................................... Trabalho"
 echo "HP: 100"
 echo "Time: 100"
 hp_t1_pre=$(( 100 ))

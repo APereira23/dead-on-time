@@ -32,7 +32,7 @@ time_t8_pre=$carrytime7
 
 fi
 
-echo "PROGRESS: Home ............................o-o............. Work"
+echo "PROGRESSO: Casa ............................o-o............. Trabalho"
 echo "HP: $hp_t8_pre"
 echo "Time: $time_t8_pre"
 sleep 3
@@ -40,14 +40,14 @@ echo "..."
 sleep 1
 
 #event
-echo "A moving truck has parked on the cycling lane."
+echo "Uma carrinha de mudanças estacionou em cima da ciclovia."
 sleep 2
-echo "You ring the bell but the driver tells you to bug off."
+echo "Tu tocas a campainha na esperança de que ela se afaste para te deixar passar, mas o condutor manda-te ir dar uma volta."
 sleep 4
 echo "..."
 sleep 1
-echo "You lose some time by having to go around the truck, and a little amount of HP"
-echo "due to the cardiovascular strain of shouting profanities back at the truck driver."
+echo "Perdes algum tempo a ter de dar literalmente a volta, e um pouco de HP"
+echo "devido ao esforço cardiovascular de vociferar bestialidades contra o homem."
 sleep 3
 echo "..."
 sleep 1
@@ -61,22 +61,22 @@ time_t8_post=$(( $time_t8_pre - $timedmg ))
 #failconditions
 
 if [[ $hp_t8_post -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE"
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t8_post -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
 else
 echo "..."
-echo "Press [enter] to continue"
+echo "Pressiona [enter] para continuar"
 fi
 
 

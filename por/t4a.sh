@@ -24,7 +24,7 @@ hp_t4_pre=$carryhp3
 
 time_t4_pre=$carrytime3
 
-echo "PROGRESSO: Home ............o-o............................. Work"
+echo "PROGRESSO: Casa ............o-o............................. Trabalho"
 echo "HP: $hp_t4_pre"
 echo "Time: $time_t4_pre"
 sleep 3
