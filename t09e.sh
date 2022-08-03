@@ -26,7 +26,7 @@ hp_t9_pre=$carryhp8
 
 time_t9_pre=$carrytime8
 
-echo "PROGRESSO: Casa ................................o-o......... Trabalho"
+echo "PROGRESS: Home ................................o-o......... Work"
 echo "HP: $hp_t9_pre"
 echo "Time: $time_t9_pre"
 sleep 3
@@ -35,21 +35,23 @@ sleep 1
 
 #event
 
-echo "Está um gatinho deitado no passeio!"
+echo "You see a kitten on the sidewalk!"
 sleep 2
-echo "(Parar para dar festinhas [p] / Continuar [c])"
+echo "Will you stop and pet it?"
+sleep 1
+echo "(Stop [s] / Keep moving [m])"
 read input
 
 sleep 1
 echo "..."
 sleep 1
 
-if [[ $input == "p" ]]; then
-	echo "Aproximas-te do gato."
+if [[ $input == "s" ]]; then
+	echo "You approach the cat."
 	sleep 1
 	echo "..."
 	sleep 1
-	echo "Ele é mansinho!"
+	echo "He's friendly!"
 	sleep 2
 	echo $(clear)
 	sleep 1
@@ -66,19 +68,19 @@ if [[ $input == "p" ]]; then
 	wait
 	echo $(clear)
 	sleep 2
-	echo "A tua alma negra enche-se de luz, e a vida volta a ter sentido."
+	echo "Your dark soul is filled with light, and you recover the will to carry on."
 	sleep 3
 	echo "+20 hp!"
 	echo "-8 time"
 	hp_t9_post=$(( $hp_t9_pre + 20 ))
 	time_t9_post=$(( $time_t9_pre - 8 ))
 	
-	elif [[ $input == "c" ]]; then
-		echo "Ignoras o gato e segues viagem."
+	elif [[ $input == "m" ]]; then
+		echo "You ignore the kitten and keep moving."
 		sleep 2
 		echo "..."
 		sleep 1
-		echo "Perdes uma pequena quantidade de HP por teres um buraco negro onde a alma devia estar."
+		echo "You lose a small amount of HP due to having an empty hole where your heart should be."
 		sleep 2
 		echo "-5 hp"
 		hp_t9_post=$(( $hp_t9_pre - 5 ))
@@ -86,7 +88,7 @@ if [[ $input == "p" ]]; then
 
 else 
 
-echo "Tecla errada! Vacilas sob o fardo da escolha, e cais da bicicleta."
+echo "Wrong key! You waver under the burden of choice, and fall off your bike."
 sleep 2
 echo "-30 hp"
 echo "-15 time"
@@ -97,22 +99,22 @@ fi
 #failconditions
 
 if [[ $hp_t9_post -le 0 ]]; then
-        echo "DESMAIASTE"
+        echo "You fainted."
         sleep 2
-        echo "FIM DO JOGO"
+        echo "GAME OVER"
         sleep 3
         exit 1
 
         elif [[ $time_t9_post -le 0 ]]; then
-                echo "ACABOU-SE O TEMPO!"
+                echo "Out of time!"
                 sleep 2
-                echo "FIM DO JOGO"
+                echo "GAME OVER"
                 sleep 3
                 exit 1
 
 else
 echo "..."
-echo "Pressiona [enter] para continuar"
+echo "Press [enter] to continue"
 fi
 
 #transition
@@ -123,10 +125,10 @@ carryhp9=$hp_t9_post
 carrytime9=$time_t9_post
 
 export carryhp9 carrytime9
-./t10a.sh
+./t10e.sh
 
 sleep 1
 
-echo $(bash t10a.sh)
+echo $(bash t10e.sh)
 
 exit 1

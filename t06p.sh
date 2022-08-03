@@ -24,7 +24,7 @@ hp_t6_pre=$carryhp5
 
 time_t6_pre=$carrytime5
 
-echo "PROGRESS: Home ...................o-o...................... Work"
+echo "PROGRESSO: Casa ...................o-o...................... Trabalho"
 echo "HP: $hp_t6_pre"
 echo "Time: $time_t6_pre"
 sleep 3
@@ -33,43 +33,43 @@ sleep 1
 
 #event
 
-echo "You pull up at a red light."
+echo "Páras num sinal vermelho."
 sleep 2
-echo "A street musician is performing in front of the stopped traffic,"
+echo "Um músico de rua está a tocar para o trânsito parado"
 sleep 1
-echo "playing a solo saxophone rendition of 'Despacito'."
+echo "uma versão em saxofone do 'Despacito'."
 sleep 3
-echo "Right before the traffic lights open, he asks you for some change."
+echo "Antes do sinal ficar verde, ele pede-te alguns trocos."
 sleep 3
-echo "(Give money [g] / Run away [r])"
+echo "(Dar dinheiro [d] / Fugir [f])"
 read input
 
 sleep 1
 echo "..."
 sleep 2
 
-if [[ $input == "r" ]]; then
-	echo "You pretend that you don't have any change on you, and quickly get away."
+if [[ $input == "f" ]]; then
+	echo "Tu finges que não tens moedas contigo, e aceleras rapidamente para fora dali."
 	hp_t6_post=$hp_t6_pre
 	time_t6_post=$time_t6_pre
 
-	elif [[ $input == "g" ]]; then
-		echo "You take a few coins from your wallet and hand them out."
+	elif [[ $input == "d" ]]; then
+		echo "Tiras alguns trocos da carteira e dás ao músico."
 		sleep 2
-		echo "The musician thanks you profusely."
+		echo "Ele agradece entusiasticamente."
 		sleep 3
-		echo "Before leaving, he warns that the road ahead is blocked due to maintenance work,"
-		echo "and tells you about an alternate route you can take."
+		echo "Antes de partires, ele avisa-te de que a estrada à frente está bloqueada por causa de obras,"
+		echo "e fala-te de um caminho alternativo que podes tomar."
 		sleep 3
 		timedmg=$(( $RANDOM % 4 + 5 ))
 		echo "-$timedmg time"
-		echo "-obstacle avoided!"
+		echo "-obstáculo evitado!"
 		hp_t6_post=$hp_t6_pre
 		time_t6_post=$(( $time_t6_pre - $timedmg ))
 
 else
 
-echo "Wrong key! You waver under the burden of choice, and fall off your bike."
+echo "Tecla errada! Vacilas sob o fardo da escolha, e cais da bicicleta."
 sleep 2
 echo "-30 hp"
 echo "-15 time"
@@ -82,22 +82,22 @@ sleep 2
 #failconditions
 
 if [[ $hp_t6_post -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE"
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t6_post -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
 else
 echo "..."
-echo "Press [enter] to continue"
+echo "Pressiona [enter] para continuar"
 fi
 
 #transition
@@ -108,23 +108,23 @@ read key
 carryhp6=$hp_t6_post
 carrytime6=$time_t6_post
 
-if [[ $input == "g" ]]; then
+if [[ $input == "d" ]]; then
 	
 	pass="jump"
 
 	export carryhp6 carrytime6 pass
-	./t8a.sh
+	./t08p.sh
 
 	sleep 1
-	echo $(bash t8a.sh)
+	echo $(bash t08p.sh)
 
 else
 
 export carryhp6 carrytime6
-./t7a.sh
+./t07p.sh
 
 sleep1
-echo $(bash t7a.sh)
+echo $(bash t07p.sh)
 
 fi
 

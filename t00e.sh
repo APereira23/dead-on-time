@@ -1,21 +1,19 @@
 #!/bin/bash
 
-#start screen
-
-sleep 2
+sleep 1
 echo $(clear)
 #intro#
-echo "carregando..."
+echo "loading..."
 echo "        __o"
 echo "      _ \<_"
 echo "(((  (_)/(_)"
 sleep 3
-echo "carregando..."
+echo "loading..."
 echo "             __o"
 echo "           _ \<_"
 echo "     (((  (_)/(_)"
 sleep 2
-echo "carregando..."
+echo "loading..."
 echo "                  __o"
 echo "                _ \<_"
 echo "          (((  (_)/(_)"
@@ -23,7 +21,7 @@ sleep 2
 echo "..."
 sleep 1
 
-echo "A iniciar..."
+echo "Starting game..."
 sleep 1
 echo "..."
 sleep 1
@@ -32,20 +30,20 @@ sleep 1
 echo $(timidity ./sound/SnA.mid --loop)&
 echo $(clear)
 #MUSIC
-echo "É segunda-feira de manhã e estás atrasado para o trabalho!"
+echo "It's monday morning and you are late for work!!!"
 sleep 3
-echo "Ainda meio a dormir, saltas da cama, pões umas roupas a correr e aceleras em direção à porta."
+echo "Still half asleep, you jump up from bed, hastingly put on some clothes and rush to the door."
 sleep 5
-echo "Já na rua, pegas na bicicleta e desatas a pedalar a toda a velocidade."
+echo "Outside, you hop on your trusty old bicycle and start pedaling away as fast as you can."
 sleep 5
 echo $(clear)
 sleep 1
-echo "Será que vais conseguir chegar a horas ao trabalho?"
+echo "Will you get to work on time?"
 sleep 2
-echo "Será que vais conseguir sequer chegar lá?"
+echo "Will you even make it there?"
 sleep 3
 echo $(clear)
-echo "Tudo depende de ti..."
+echo "Everything's up to you..."
 sleep 5
 echo $(clear)
 echo "        __o"
@@ -64,13 +62,11 @@ echo "          (((  (_)/(_)"
 sleep 2
 echo "..."
 sleep 1
-HP=$(( 60 ))
-carry=$HP
 
 export carry
-./t1a.sh
+./t01e.sh
 
-echo $(bash t1a.sh)
+echo $(bash t01e.sh)
 
 exit 1
 

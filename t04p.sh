@@ -199,10 +199,10 @@ carryhp4=$hp_t4_post
 carrytime4=$time_t4_post
 
 export carryhp4 carrytime4
-./t5a.sh
+./t05p.sh
 
 sleep 1
 
-echo $(bash t5a.sh)
+echo $(bash t05p.sh)
 
 exit 1

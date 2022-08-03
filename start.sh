@@ -16,15 +16,20 @@ sleep 1
 read language
 sleep 1
 echo "..."
-sleep 1
+echo $(clear)
 if [[ $language == "e" ]]; then
-	echo $(bash ./eng/dead-on-time.sh)
-		elif [[ $language == "p" ]]; then
-			echo $(bash ./por/dead-on-time.sh)
-
+	export start
+	./t00e.sh
+	echo $(bash t00e.sh)
+	echo $(clear)
+	elif [[ $language == "p" ]]; then
+		export start
+		./t00p.sh
+		echo $(bash t00p.sh)
+		echo $(clear)
+	
 else
 echo "Wrong key! Try again!"
 sleep 1
 exit 1
-
 fi

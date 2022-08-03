@@ -233,15 +233,13 @@ sleep 1
 	timedmg=$(( $RANDOM % 6 + 15 ))
 	echo "-$hpdmg hp"
 	echo "-$timedmg time"
-	hpdmg=$(( $hp_t10_pre - $hpdmg ))
-	timedmg=$(( $time_t10_pre - $timedmg ))
+	hp_t10_post=$(( $hp_t10_pre - $hpdmg ))
+	time_t10_post=$(( $time_t10_pre - $timedmg ))
 	sleep 3
 	echo "O tipo da trotineta afasta-se enquanto te chama nomes."
 	sleep 1
 	echo "...Como se ele também pudesse andar ali naquilo!"
 	sleep 2
-	hp_t10_post=$(( $hp_t10_pre - $hpdmg ))
-	time_t10_post=$(( $time_t10_pre - $timedmg ))
 	fi
 fi
 
@@ -275,9 +273,9 @@ carrytime10=$time_t10_post
 
 
 export carryhp10 carrytime10
-./t11a.sh
+./t11p.sh
 sleep 1
 
-echo $(bash t11a.sh)
+echo $(bash t11p.sh)
 
 exit 1

@@ -88,11 +88,11 @@ carryhp8=$hp_t8_post
 carrytime8=$time_t8_post
 
 export carryhp8 carrytime8
-./t9a.sh
+./t09p.sh
 
 sleep 1
 
-echo $(bash t9a.sh)
+echo $(bash t09p.sh)
 
 exit 1
 

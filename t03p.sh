@@ -121,10 +121,10 @@ carryhp3=$hp_t3_post
 carrytime3=$time_t3_post
 
 export carryhp3 carrytime3
-./t4a.sh
+./t04p.sh
 
 sleep 1
 
-echo $(bash t4a.sh)
+echo $(bash t04p.sh)
 
 exit 1

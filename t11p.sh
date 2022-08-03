@@ -20,11 +20,11 @@ echo "..."
 sleep 1
 echo $(clear)
 
-hp_t11_pre=$carryhp10
+hp_t11_pre="100" #$carryhp10
 
-time_t11_pre=$carrytime10
+time_t11_pre="100" #$carrytime10
 
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_pre"
 echo "Time: $time_t11_pre"
 sleep 3
@@ -33,26 +33,26 @@ sleep 1
 
 #event
 
-echo "The road has cleared."
+echo "A estrada está finalmente livre."
 sleep 4
-echo "Seems like smooth sailing from now on."
+echo "Parece que o pior já passou."
 sleep 3
 echo "..."
 sleep 4
 echo "..."
 sleep 1
-echo "Oh no!"
+echo "Oh não!"
 sleep 2
 echo "..."
-echo "A cab just ran over a scooter riding behind you!"
+echo "Um taxi acabou de abalroar uma trotineta que seguia atrás de ti!"
 sleep 3
-echo "The cab driver has lost his mind!"
+echo "O taxista perdeu a cabeça!"
 sleep 3
-echo "He had enough of being overtaken by bikers and cyclists while he's stuck in traffic."
+echo "Após anos e anos a ver motas e velocípedes ultrapassá-lo enquanto estava preso em engarrafamentos, enlouqueceu de vez."
 sleep 4
-echo "He's chasing you now!"
+echo "Agora vem atrás de ti!"
 sleep 3
-echo "He wants more blood!"
+echo "Ele quer mais sangue!"
 sleep 5
 echo "..."
 sleep 1
@@ -62,7 +62,7 @@ echo "..."
 
 echo $(clear)
 
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_pre"
 echo "Time: $time_t11_pre"
 echo "..."
@@ -73,7 +73,7 @@ sleep 5
 #round1-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_pre"
 echo "Time: $time_t11_pre"
 echo ""
@@ -96,42 +96,42 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_pre
 carrytime11=$time_t11_pre
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 3
 echo ""
-echo "(The cabbie is trying to ram you down. Evade his attacks!"
-echo "Pay attention to the numbers coming from the cab's direction"
-echo "-Left / Center / Right-"
-echo "If you're successful, he will crash, giving you a chance to strike back!)"
-sleep 6
-echo "Ready?"
+echo "(O taxista está a tentar atropelar-te. Esquiva-te dos seus ataques!"
+echo "Presta atenção aos números que irão surgir da direção do taxi"
+echo "- Esquerda / Centro / Direita -"
+echo "Se tiveres sucesso, ele terá um acidente e poderás atacar de volta!)"
+sleep 8
+echo "Pronto?"
 sleep 1
-echo "Here he comes!" 
+echo "Aí vem ele!" 
 
 #round1-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_pre"
 echo "Time: $time_t11_pre"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 3
-echo "He's approaching from the right!"
+echo "Ele está a vir da direita!"
 sleep 2
 
 echo $(clear)
@@ -146,26 +146,26 @@ echo "	                        								                           $n2"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Home ........................................o-o. Work"
 echo "HP: $hp_t11_pre"
 echo "Time: $time_t11_pre"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code1
 sleep 2
 echo "..."
 sleep 2
 if [[ $code1 == "$n1$n2" ]]; then
-	echo "Miss!"
+	echo "Falhou!"
 	sleep 2
-	echo "He crashed into a tree. Now is your chance!"
+	echo "Ele espetou-se contra uma árvore. Agora é a tua chance!"
 	sleep 1
-	echo "Choose your attack:"
-	echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-	echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+	echo "Escolha o teu ataque:"
+	echo "- Esmurra-o pela janela aberta (Golpe leve, hit garantido): [l]"
+	echo "- Atira-lhe uma pedra (Golpe pesado, mais danos mas menos probabilidade de acertar): [h]"
 	read attack1
 	sleep 2
 	if [[ $attack1 == "h" ]]; then
@@ -196,7 +196,7 @@ if [[ $code1 == "$n1$n2" ]]; then
 	echo "-4 time"
 	fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp1=$bosshp
 hpdmg1=$(( $RANDOM % 8 + 8 ))
 hp_t11_1=$(( $hp_t11_pre - $hpdmg1 ))
@@ -208,16 +208,16 @@ echo "-4 time"
 fi
 
 if [[ $hp_t11_1 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "ACABOU O JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_1 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -230,7 +230,7 @@ fi
 #round2-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_1"
 echo "Time: $time_t11_1"
 echo ""
@@ -253,37 +253,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_1
 carrytime11=$time_t11_1
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 5
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round2-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_1"
 echo "Time: $time_t11_1"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's approaching from the left!"
+echo "Ele vem da esquerda!"
 sleep 1
 
 echo $(clear)
@@ -293,31 +293,31 @@ echo "$n3"
 sleep 1
 echo $(clear)
 sleep 1
-n4=$(( $RANDOM % 100 )) 
+n4=$(( $RANDOM % 1000 )) 
 echo "         $n4"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_1"
 echo "Time: $time_t11_1"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code2
 sleep 2
 echo "..."
 sleep 2
 if [[ $code2 == "$n3$n4" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a wall. Now is your chance!"
+        echo "Ele chocou com uma parede. Agora é a tua chance!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Esmurra-o pela janela aberta (ataque leve, hit garantido): [l]"
+        echo "- Atira-lhe uma pedra (golpe pesado, maior dano mas maior probabilidade de falhar): [h]"
         read attack2
         sleep 2
         if [[ $attack2 == "h" ]]; then
@@ -348,7 +348,7 @@ if [[ $code2 == "$n3$n4" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp2=$bosshp1
 hpdmg2=$(( $RANDOM % 8 + 8 ))
 hp_t11_2=$(( $hp_t11_1 - $hpdmg2 ))
@@ -359,16 +359,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_2 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_2 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -380,7 +380,7 @@ fi
 #round3-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_2"
 echo "Time: $time_t11_2"
 echo ""
@@ -402,16 +402,16 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_2
 carrytime11=$time_t11_2
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
@@ -420,19 +420,19 @@ sleep 4
 echo ""
 echo "Ready?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele" 
 
 #round3-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_2"
 echo "Time: $time_t11_2"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's coming from the rear!"
+echo "Ele vem de trás!"
 sleep 1
 
 echo $(clear)
@@ -442,31 +442,31 @@ echo "								$n5"
 sleep 1
 echo $(clear)
 sleep 1
-n6=$(( $RANDOM % 100 )) 
+n6=$(( $RANDOM % 1000 )) 
 echo "        									 $n6"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_2"
 echo "Time: $time_t11_2"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code3
 sleep 2
 echo "..."
 sleep 2
 if [[ $code3 == "$n5$n6" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a wall. Now is your chance!"
+        echo "Ele espetou-se contra uma parede!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (ataque leve, hit garantido): [l]"
+        echo "- Pedrada (ataque pesado, mais danos mas maior probabilidade de falhar): [h]"
         read attack3
         sleep 2
         if [[ $attack3 == "h" ]]; then
@@ -497,7 +497,7 @@ if [[ $code3 == "$n5$n6" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp3=$bosshp2
 hpdmg3=$(( $RANDOM % 8 + 8 ))
 hp_t11_3=$(( $hp_t11_2 - $hpdmg3 ))
@@ -508,16 +508,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_3 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_3 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -530,7 +530,7 @@ fi
 #round4-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_3"
 echo "Time: $time_t11_3"
 echo ""
@@ -552,42 +552,42 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_3
 carrytime11=$time_t11_3
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 5
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round4-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_3"
 echo "Time: $time_t11_3"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 3
-echo "He's coming from the left!"
+echo "Ele vem da esquerda!"
 sleep 1
 
 echo $(clear)
 sleep 1
-n7=$(( $RANDOM % 1000 ))
+n7=$(( $RANDOM % 10000 ))
 echo "   $n7"
 sleep 1
 echo $(clear)
@@ -597,26 +597,26 @@ echo "               $n8"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_3"
 echo "Time: $time_t11_3"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code4
 sleep 2
 echo "..."
 sleep 2
 if [[ $code4 == "$n7$n8" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a tree. Now is your chance!"
+        echo "Ele chocou com um poste!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Pedrada (golpe pesado, mais dano mas maior probabilidade de falhar): [h]"
         read attack4
         sleep 2
         if [[ $attack4 == "h" ]]; then
@@ -647,7 +647,7 @@ if [[ $code4 == "$n7$n8" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp4=$bosshp3
 hpdmg4=$(( $RANDOM % 8 + 8 ))
 hp_t11_4=$(( $hp_t11_3 - $hpdmg4 ))
@@ -658,16 +658,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_4 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_4 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -679,7 +679,7 @@ fi
 #round5-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESS0: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_4"
 echo "Time: $time_t11_4"
 echo ""
@@ -701,37 +701,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_4
 carrytime11=$time_t11_4
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 3
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round5-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_4"
 echo "Time: $time_t11_4"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "He's coming from the right!"
+echo "Ele vem da direita!"
 sleep 1
 
 echo $(clear)
@@ -741,31 +741,31 @@ echo "   																	$n9"
 sleep 1
 echo $(clear)
 sleep 1
-n10=$(( $RANDOM % 1000 )) 
+n10=$(( $RANDOM % 10000 )) 
 echo "               											$n10"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Home ........................................o-o. Work"
 echo "HP: $hp_t11_4"
 echo "Time: $time_t11_4"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code5
 sleep 2
 echo "..."
 sleep 2
 if [[ $code5 == "$n9$n10" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a tree. Now is your chance!"
+        echo "O taxi foi contra uma parede!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Pedra (golpe pesado, mais dano mas maior probabilidade de falhar): [h]"
         read attack5
         sleep 2
         if [[ $attack5 == "h" ]]; then
@@ -796,7 +796,7 @@ if [[ $code5 == "$n9$n10" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp5=$bosshp4
 hpdmg5=$(( $RANDOM % 8 + 8 ))
 hp_t11_5=$(( $hp_t11_4 - $hpdmg5 ))
@@ -807,16 +807,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_5 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_5 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -828,7 +828,7 @@ fi
 #round6-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_5"
 echo "Time: $time_t11_5"
 echo ""
@@ -850,37 +850,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_5
 carrytime11=$time_t11_5
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 4
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round6-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_5"
 echo "Time: $time_t11_5"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's coming from the right!"
+echo "Ele vem da direita!"
 sleep 1
 
 echo $(clear)
@@ -890,7 +890,7 @@ echo "  											 					$n11"
 sleep 1
 echo $(clear)
 sleep 1
-n12=$(( $RANDOM % 1000 )) 
+n12=$(( $RANDOM % 10000 )) 
 echo "  									             				$n12"
 sleep 1
 
@@ -902,19 +902,19 @@ echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code6
 sleep 2
 echo "..."
 sleep 2
 if [[ $code6 == "$n11$n12" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a lighting post. Now is your chance!"
+        echo "O taxi foi contra um poste!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Throw rock (golpe pesado, mais dano mas maior probabilidade de falhar): [h]"
         read attack6
         sleep 2
         if [[ $attack6 == "h" ]]; then
@@ -945,7 +945,7 @@ if [[ $code6 == "$n11$n12" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp6=$bosshp5
 hpdmg6=$(( $RANDOM % 8 + 8 ))
 hp_t11_6=$(( $hp_t11_5 - $hpdmg6 ))
@@ -956,16 +956,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_6 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_6 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -977,7 +977,7 @@ fi
 #round7-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_6"
 echo "Time: $time_t11_6"
 echo ""
@@ -999,37 +999,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_6
 carrytime11=$time_t11_6
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 4
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!"
 
 #round7-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_6"
 echo "Time: $time_t11_6"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's coming from the left!"
+echo "Ele vem da esquerda!"
 sleep 1
 
 echo $(clear)
@@ -1039,31 +1039,31 @@ echo "  $n13"
 sleep 1
 echo $(clear)
 sleep 1
-n14=$(( $RANDOM % 100 )) 
+n14=$(( $RANDOM % 1000 )) 
 echo "         $n14"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_6"
 echo "Time: $time_t11_6"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code7
 sleep 2
 echo "..."
 sleep 2
 if [[ $code7 == "$n13$n14" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into another car. Now is your chance!"
+        echo "Ele chocou com outro carro!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Atirar pedra (golpe pesado, mais dano mas maior probabilidade de falhar): [h]"
         read attack7
         sleep 2
         if [[ $attack7 == "h" ]]; then
@@ -1094,7 +1094,7 @@ if [[ $code7 == "$n13$n14" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp7=$bosshp6
 hpdmg7=$(( $RANDOM % 8 + 8 ))
 hp_t11_7=$(( $hp_t11_6 - $hpdmg7 ))
@@ -1105,16 +1105,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_7 -le 0 ]]; then
-        echo "You fainted."
+        echo "DESMAIASTE"
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_7 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -1126,7 +1126,7 @@ fi
 #round8-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_7"
 echo "Time: $time_t11_7"
 echo ""
@@ -1148,37 +1148,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_7
 carrytime11=$time_t11_7
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 4
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round8-fight-----------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_7"
 echo "Time: $time_t11_7"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's coming from the left!"
+echo "Ele vem da esquerda!"
 sleep 1
 
 echo $(clear)
@@ -1188,31 +1188,31 @@ echo "  $n15"
 sleep 1
 echo $(clear)
 sleep 1
-n16=$(( $RANDOM % 1000 )) 
+n16=$(( $RANDOM % 10000 )) 
 echo "         $n16"
 sleep 1
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_7"
 echo "Time: $time_t11_7"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code8
 sleep 2
 echo "..."
 sleep 2
 if [[ $code8 == "$n15$n16" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a another car. Now is your chance!"
+        echo "Ele chocou com outro carro!."
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque:"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Atirar pedra (golpe pesado, mais dano mas maior probabilidade de falhar): [h]"
         read attack8
         sleep 2
         if [[ $attack8 == "h" ]]; then
@@ -1243,7 +1243,7 @@ if [[ $code8 == "$n15$n16" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp8=$bosshp7
 hpdmg8=$(( $RANDOM % 8 + 8 ))
 hp_t11_8=$(( $hp_t11_7 - $hpdmg8 ))
@@ -1254,16 +1254,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_8 -le 0 ]]; then
-        echo "You fainted."
+        echo "Desmaiaste."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_8 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -1277,7 +1277,7 @@ fi
 #round9-start--------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_8"
 echo "Time: $time_t11_8"
 echo ""
@@ -1299,37 +1299,37 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_8
 carrytime11=$time_t11_8
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 sleep 4
 echo ""
-echo "Ready?"
+echo "Pronto?"
 sleep 1
-echo "Here he comes again!" 
+echo "Aí vem ele!" 
 
 #round9-fight-------------------------------------------------------------------------------
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_8"
 echo "Time: $time_t11_8"
 echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 2
-echo "He's coming from the rear!"
+echo "Ele vem de trás!"
 sleep 1
 
 echo $(clear)
@@ -1339,7 +1339,7 @@ echo "  									$n17"
 sleep 1
 echo $(clear)
 sleep 1
-n18=$(( $RANDOM % 1000 )) 
+n18=$(( $RANDOM % 10000 )) 
 echo "         										$n18"
 sleep 1
 
@@ -1351,19 +1351,19 @@ echo ""
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 1
-echo "Type the code"
+echo "Digita o código"
 read code9
 sleep 2
 echo "..."
 sleep 2
 if [[ $code9 == "$n17$n18" ]]; then
-        echo "Miss!"
+        echo "Falhou!"
         sleep 1
-        echo "He crashed into a another car. Now is your chance!"
+        echo "Ele chocou com outro carro!"
         sleep 1
-        echo "Choose your attack:"
-        echo "- Punch him through the window (Light attack, garanteed hit): [l]"
-        echo "- Throw rock (Heavy attack, big damage but likely to miss): [h]"
+        echo "Escolhe o teu ataque"
+        echo "- Murro (golpe leve, hit garantido): [l]"
+        echo "- Atirar pedra (golpe pesado, mais dano mas maior probabilidade de falhar: [h]"
         read attack9
         sleep 2
         if [[ $attack9 == "h" ]]; then
@@ -1394,7 +1394,7 @@ if [[ $code9 == "$n17$n18" ]]; then
         echo "-4 time"
         fi
 else
-echo "You're hit!"
+echo "Foste atingido!"
 bosshp9=$bosshp8
 hpdmg9=$(( $RANDOM % 8 + 8 ))
 hp_t11_9=$(( $hp_t11_8 - $hpdmg9 ))
@@ -1405,16 +1405,16 @@ echo "-4 time"
 
 fi
 if [[ $hp_t11_9 -le 0 ]]; then
-        echo "You fainted."
+        echo "Desmaiaste."
         sleep 2
-        echo "GAME OVER"
+        echo "FIM DO JOGO"
         sleep 3
         exit 1
 
         elif [[ $time_t11_9 -le 0 ]]; then
-                echo "Out of time!"
+                echo "ACABOU-SE O TEMPO!"
                 sleep 2
-                echo "GAME OVER"
+                echo "FIM DO JOGO"
                 sleep 3
                 exit 1
 
@@ -1430,7 +1430,7 @@ fi
 
 
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_9"
 echo "Time: $time_t11_9"
 echo ""
@@ -1452,34 +1452,34 @@ echo "TAXI DRIVER $boss"
 echo ""
 echo ""
 sleep 2
-echo "V I C T O R Y   A C H I E V E D"
+echo "V I T Ó R I A"
 sleep 6
 
 carryhp11=$hp_t11_9
 carrytime11=$time_t11_9
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 exit 1
 fi
 
 echo "TAXI DRIVER $boss"
 echo ""
 sleep 3
-echo "(Hey there! If you're reading this, it means the fight is starting to drag a little."
-echo "Having some trouble, are you?)"
+echo "(Olá! Se estás a ler isto, é porque o combate está a começar a arrastar-se..."
+echo "Está a ser difícil?)"
 sleep 5
 echo "..."
 sleep 1
-echo "(Well, fortunately for you, the game was only programmed to go this far, because I still"
-echo "haven't properly learned how to loop scripts, and it's getting late in the evening! So... "
+echo "(Bem... felizmente para ti, o combate só foi programado para chegar até aqui, porque"
+echo "eu ainda não sei trabalhar com loops nos scripts, e está a fazer-se tarde! Por isso... "
 sleep 7
 echo "..."
 sleep1
 echo $(clear)
-echo "PROGRESS: Home ........................................o-o. Work"
+echo "PROGRESSO: Casa ........................................o-o. Trabalho"
 echo "HP: $hp_t11_9"
 echo "Time: $time_t11_9"
 echo ""
@@ -1487,7 +1487,7 @@ echo "TAXI DRIVER [                                                ]"
 echo ""
 echo ""
 sleep 2
-echo "		V I C T O R Y   A C H I E V E D"
+echo "			V I T O R I A"
 
 sleep 3
 echo ""
@@ -1500,8 +1500,8 @@ carryhp11=$hp_t11_9
 carrytime11=$time_t11_9
 
 export carryhp11 carrytime11
-./t12.sh
+./t12p.sh
 sleep 1
-echo $(bash t12.sh)
+echo $(bash t12p.sh)
 
 exit 1

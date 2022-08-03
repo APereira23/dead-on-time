@@ -83,10 +83,10 @@ carryhp=$hp_t1_post
 carrytime=$time_t1_post
 
 export carryhp carrytime
-./t2a.sh
+./t02e.sh
 
 sleep 1
 
-echo $(bash t2a.sh)
+echo $(bash t02e.sh)
 
 exit 1

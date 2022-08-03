@@ -104,11 +104,11 @@ carryhp5=$hp_t5_post
 carrytime5=$time_t5_post
 
 export carryhp5 carrytime5
-./t6a.sh
+./t06p.sh
 
 sleep 1
 
-echo $(bash t6a.sh)
+echo $(bash t06p.sh)
 
 exit 1
 

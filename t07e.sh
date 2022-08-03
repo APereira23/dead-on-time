@@ -199,11 +199,11 @@ carryhp7=$hp_t7_post
 carrytime7=$time_t7_post
 
 export carryhp7 carrytime7
-./t8a.sh
+./t08e.sh
 
 sleep 1
 
-echo $(bash t8a.sh)
+echo $(bash t08e.sh)
 
 exit 1
 
