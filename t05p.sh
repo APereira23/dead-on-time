@@ -47,7 +47,7 @@ echo "..."
 sleep 1
 echo "..."
 
-if [[ $input == "m" ]]; then
+if [[ $input == "f" ]]; then
 	echo "Segues caminho."
 	sleep 2
 	echo "Não há tempo a perder!"
