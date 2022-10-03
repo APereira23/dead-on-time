@@ -30,7 +30,7 @@ How to Play:
 - Fork the repository;
 - In your command terminal, go to the game folder and type:
   <br>
-    bash t00e.sh.sh
+    bash t00e.sh
   <br>;
 - Note: TiMidity++ package is required to play the sound files. Installation can be done through the command-line with the following command:
   <br>
