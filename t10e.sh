@@ -99,11 +99,6 @@ if [[ $input == "t" ]]; then
         sleep 1
 
 	echo $(clear)
-	n7=$(( $RANDOM % 100 ))
-	echo "		$n7"
-        sleep 1
-
-	echo $(clear)
         sleep 1
         echo "Type the numbers shown in the correct order."
         sleep 1
@@ -113,7 +108,7 @@ if [[ $input == "t" ]]; then
         sleep 1
         echo "..."
         sleep 1
-	if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7" ]]; then
+	if [[ $numbers == "$n1$n2$n3$n4$n5$n6" ]]; then
                 echo "Well done!"
                 sleep 2
                 echo "You're almost there!"
@@ -197,11 +192,6 @@ echo "       				   $n6"
 sleep 1
 
 echo $(clear)
-n7=$(( $RANDOM % 100 ))
-echo "				$n7"
-sleep 1
-
-echo $(clear)
 sleep 1
 echo "Type the numbers shown in the correct order."
 sleep 1
@@ -212,7 +202,7 @@ sleep 1
 echo "..."
 sleep 1
 
-	if [[ $numbers == "$n1$n2$n3$n4$n5$n6$n7" ]]; then
+	if [[ $numbers == "$n1$n2$n3$n4$n5$n6" ]]; then
 	        echo "Well done!"
 	        sleep 2
 	        echo "You managed not to kill anyone while also not killing yourself."
