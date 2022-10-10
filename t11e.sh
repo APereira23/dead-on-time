@@ -33,6 +33,12 @@ sleep 1
 
 #event
 
+
+killall timidity&
+clear
+sleep 2
+echo $(clear)
+
 echo "The road has cleared."
 sleep 4
 echo "Seems like smooth sailing from now on."
@@ -50,6 +56,12 @@ echo "The cab driver has lost his mind!"
 sleep 3
 echo "He had enough of being overtaken by bikers and cyclists while he's stuck in traffic."
 sleep 4
+
+sleep 2
+echo $(timidity ./sound/boss.mid --loop)&
+echo $(clear)
+
+
 echo "He's chasing you now!"
 sleep 3
 echo "He wants more blood!"

@@ -32,7 +32,6 @@ echo "..."
 sleep 1
 
 #event
-
 echo "As you approach the final stretch of the journey, you find yourself in yet another traffic jam!"
 sleep 4
 echo "Rush hour is a nightmare..."
