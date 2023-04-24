@@ -25,16 +25,20 @@ In the end, some ideas for alternate paths ended up getting scraped, because by 
 
 
 
-How to Play:
+<strong>How to Play</strong>:
 
 - Fork the repository;
 - In your command terminal, go to the game folder and type:
   <br>
+    ```bash
     bash t00e.sh
-  <br>;
+    ```
+  <br>
 - Note: TiMidity++ package is required to play the sound files. Installation can be done through the command-line with the following command:
   <br>
-    sudo apt install timidity ;
+    ```bash
+    sudo apt install timidity
+    ```
   <br>
 <br>
 How Long to Beat: ~10/15 minutes
