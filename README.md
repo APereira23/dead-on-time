@@ -31,7 +31,7 @@ In the end, some ideas for alternate paths ended up getting scraped, because by 
 - In your command terminal, go to the game folder and type:
   <br>
     ```bash
-    bash t00e.sh
+    bash dead-on-time.sh
     ```
   <br>
 - Note: TiMidity++ package is required to play the sound files. Installation can be done through the command-line with the following command:
